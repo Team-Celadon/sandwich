@@ -4,6 +4,7 @@ CREATE DATABASE sandwiches_db;
 
 USE sandwiches_db;
 
+
 CREATE TABLE user (
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(100) NOT NULL,
@@ -15,7 +16,7 @@ CREATE TABLE user (
 CREATE TABLE sandwich (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
-    user_id INT NOT NULL,
+    user_id INT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
