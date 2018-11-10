@@ -1,0 +1,82 @@
+#title {
+    font-family: 'Kumar One Outline', cursive;
+    width: 101%;
+    text-align: center;
+}
+
+#menuDiv{
+    border-style: solid;
+
+    font-family: 'Raleway', sans-serif;
+
+    
+}
+
+#nose {
+    font-family: 'Crimson Text', serif;
+
+    }
+
+#top {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+/* weekly leaderboard */
+
+#leaderboardDiv {
+    border-style: solid;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+#top10 {
+    font-family: 'Kumar One Outline', cursive;
+}
+
+#burg {
+
+}
+
+
+
+/* set menu */
+
+#weeklyFeatures{
+    border-style: solid;
+
+}
+
+#potato {
+    font-family: 'Kumar One Outline', cursive;
+}
+
+#alwaysHere{
+
+}
+
+ #ian{
+
+ }
+
+ #burgDBS{
+    border-style: solid;
+ }
+
+
+
+
+
+
+
+
+
+/* 
+font-family: 'Kumar One Outline', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Playfair Display', serif; */
