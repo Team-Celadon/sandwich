@@ -2,34 +2,32 @@
     font-family: 'Kumar One Outline', cursive;
     width: 101%;
     text-align: center;
+    background-color: red;
 }
 
+
+/* ===========================menu div================================ */
 #menuDiv{
     border-style: solid;
-
     font-family: 'Raleway', sans-serif;
-
-    
+    width: 20%
 }
 
 #nose {
     font-family: 'Crimson Text', serif;
-
     }
 
 #top {
     font-family: 'Raleway', sans-serif;
-
 }
 
 
-/* weekly leaderboard */
+/* ====================weekly leaderboard========================== */
 
 #leaderboardDiv {
     border-style: solid;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    
 }
 
 #top10 {
@@ -42,7 +40,7 @@
 
 
 
-/* set menu */
+/* ===========================set menu================================== */
 
 #weeklyFeatures{
     border-style: solid;

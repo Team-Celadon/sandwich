@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Crimson+Text|Great+Vibes|Kumar+One+Outline|Playfair+Display|Raleway" rel="stylesheet">
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    
+    
     <title>The Spicy Spot</title>
 </head>
 <body>
@@ -13,19 +21,13 @@
 <h1 id = title> Spicy's Secret Spot</h1>
 
 
-    <!-- order menu -->
+    <!-- ====================================order menu=================================== -->
+    <!-- ====================================order menu=================================== -->
+    <!-- ====================================order menu=================================== -->
+    <!-- ====================================order menu=================================== -->
     <div id = "menuDiv">
         <p id = "nose"> You can search for a burger you have previousy ordered, or you can create your own burger!</p>
-        <P id = "menu"> Search for an existing buger:</P>
-    
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"></span>
-            </div>
-                <input type="text" class="form-control" placeholder="Burger Name" aria-label="Burger Name" aria-describedby="basic-addon1">
-            <br>
-                <button id = "hello">Search</button>
-            </div>
+        
     
         <P id = "menu"> Phone number input:</P>
     
@@ -76,7 +78,7 @@
       </div>
       
     
-      <div class="input-group mb-3">
+      <div class="input-group mb-3" id = "frog">
           <p id = "nose"> Choose your toppings:</p>
         <div class="input-group-prepend">
             <div class="input-group-text" id = "nose">
@@ -85,65 +87,106 @@
                 <div class = "cheese">
                     <p id = "top">Choose a Cheese:</p>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> American cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Swiss cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Pepperjack Cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Cheddar Cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Brie
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Macaroni and Cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Munster Cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Cream Cheese
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Blue cheese
                 </div>
 
                 <div class = "saucy">
                     <p id = "top">Choose a Sauce</p>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Ketchup
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Mustard
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Manoyaise
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Relish
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Garlic Aioli
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> BBQ sauce
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Hot Buffalo Sauce
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Ranch
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Spicy Ranch
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Gravy
+                        <br>
                         <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Maple Syrup
                 </div>
 
                 <div class = "classics">
                     <p id = "top">Choose a Classic Topping </p>
+
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Raw onion
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Caramelized onion
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Tomato
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Lettuce
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Pickles
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Hot Peppers
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Avocado
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Spinach
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Cucumber
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Portabello Mushrooms
                 
                 </div>
 
                 <div class = "spreads">
                     <p id = "top"> Choose a Spread</p>
+
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Hummus
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Peanutbutter
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Mashed Potatoes
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Cranberry Sauce
                 </div>
 
 
                 <div class id = "weirds">
                     <p id = "top"> Choose a weird topping</p>
+
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Onion Rings
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Mozzerrella Sticks
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Fries
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Perogi
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Glazed Doughnut
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Tater Tots
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Dandilion
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Sauerkraut
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Sweet Potato
                 </div>
 
@@ -151,27 +194,37 @@
                 <div id = "meats">
                     <p id = "top">Choose a meat topping</p>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Roast Beef
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Chili
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Lamb
+                    <br>
                     <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Sausage
                 </div>
 
                 <div id = "misc">
                     <p id = "top">Choose a miscellaneous topping</p>
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Pineapple
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Ghost Peppers
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Bananas
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Corn
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Black Beans
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Blackberries
-                <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Black Olives
+                
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Pineapple
+                    <br>
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Ghost Peppers
+                    <br>
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Bananas
+                    <br>
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Corn
+                    <br>
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Black Beans
+                    <br>
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Blackberries
+                    <br>
+                    <input class= "topping" type="checkbox" aria-label="Checkbox for following text input"> Black Olives
             </div>
-
+            
+            <button id = "submit"> submit</button>
 
             </div>
       </div>
     
-      <button id = "submit"> submit</button>
       </div>
 
 <br>
@@ -190,7 +243,10 @@
     </div>
 </div>
 
-<!-- weekly leaderboard -->
+<!-- ================================weekly leaderboard============================ -->
+<!-- ================================weekly leaderboard============================ -->
+<!-- ================================weekly leaderboard============================ -->
+<!-- ================================weekly leaderboard============================ -->
 
 
 <div id = "leaderboardDiv">
@@ -209,7 +265,10 @@
 
 </div>
 
-<!-- set menu -->
+<!-- ========================================set menu================================= -->
+<!-- ========================================set menu================================= -->
+<!-- ========================================set menu================================= -->
+<!-- ========================================set menu================================= -->
 
 <div id = "weeklyFeatures">
     <h1 id = potato>Weekly Feature</h1>
