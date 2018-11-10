@@ -1,0 +1,24 @@
+{
+  "name": "sandwich",
+  "version": "1.0.0",
+  "description": "A sandwich application that allows users to create their own sandwiches and vote on the best!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Celadon/sandwich.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Team-Celadon/sandwich/issues"
+  },
+  "homepage": "https://github.com/Team-Celadon/sandwich#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
