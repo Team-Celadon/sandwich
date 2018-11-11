@@ -1,8 +1,12 @@
+
+
+
 #title {
     font-family: 'Kumar One Outline', cursive;
-    width: 101%;
+    width: 105%;
     text-align: center;
     background-color: red;
+    padding: 30px;
 }
 
 
@@ -21,47 +25,106 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
-/* ====================weekly leaderboard========================== */
+/* ================================weekly leaderboard============================ -->
+================================weekly leaderboard============================ -->
+================================weekly leaderboard============================ -->
+================================weekly leaderboard============================ --> */
 
 #leaderboardDiv {
     border-style: solid;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    width: 65%;
 }
 
 #top10 {
     font-family: 'Kumar One Outline', cursive;
-}
-
-#burg {
-
+    margin: 30px;
 }
 
 
 
+#giraffe {
+    width: 60%;;
+    text-align: center;
+    display: inline-block
+}
+
+#caddy{
+
+}
+
+#Skelly {
+
+}
+
+#alaska {
+
+}
+
+/* ===========================set menu================================== */
+/* ===========================set menu================================== */
+/* ===========================set menu================================== */
 /* ===========================set menu================================== */
 
 #weeklyFeatures{
     border-style: solid;
-
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 65%;
 }
 
 #potato {
     font-family: 'Kumar One Outline', cursive;
+    margin: 30px;
 }
 
-#alwaysHere{
+#baboon {
+    width: 60%;;
+    text-align: center;
+    display: inline-block
+}
+
+#globe{
 
 }
 
- #ian{
 
- }
 
- #burgDBS{
-    border-style: solid;
- }
+/* 
+<!-- 
+=======================================SIGN UP===========================================
+=======================================SIGN UP===========================================    
+=======================================SIGN UP===========================================        
+=======================================SIGN UP=========================================== --> */
+
+#octopus {
+ width: 45%
+}
+
+#alabama {
+    width: 90;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- 
+=======================================LOGIN===========================================
+=======================================LOGIN===========================================    
+=======================================LOGIN===========================================        
+=======================================LOGIN=========================================== -->
+ */
+
+
 
 
 
