@@ -55,8 +55,57 @@ const orm = {
             cb(result)
         })
     },
-    // Adding a user's burger to the database
-    insertOne: function () {
-        
+    // Adding a user's sandwich to the database
+    insertSandwich: function (userSandwich, userId, cb) {
+        let queryString = 'INSERT INTO sandwich (name, user_id) VALUES (?,?)'
+
+        console.log(queryString)
+
+        connection.query(queryString, [userSandwich, userId], function (error, result) {
+            if (error) {
+                throw error
+            }
+            cb(result)
+        })
+    },
+    // Adding a user's sandwich meat to the database
+    insertMeat: function (userMeat, sandwichId, cb) {
+        let queryString = 'INSERT INTO meat (meat_type, sandwich_id) VALUES (?,?)'
+
+        console.log(queryString)
+
+        connection.query(queryString, [userMeat, sandwichId], function (error, result) {
+            if (error) {
+                throw error
+            }
+            cb(result)
+        })
+    },
+    // Adding a user's toppings to the database
+    insertToppings: function (userTopping, sandwichId, cb) {
+        let queryString = 'INSERT INTO toppings (topping, sandwich_id) VALUES (?,?)'
+
+        console.log(queryString)
+
+        connection.query(queryString, [userTopping, sandwichId], function (error, result) {
+            if (error) {
+                throw error
+            }
+            cb(result)
+        })
+    },
+    // Updating the rating of the sandwich
+    updateRating: function (rating, value, sandwichId, userId, cb) {
+        let queryString = 'UPDATE ratings SET ?? = ? WHERE sandwich_id = ? AND user_id = ?'
+
+        console.log(queryString, [rating, value, sandwichId, userId], function (error, result) {
+            if (error) {
+                throw error
+            }
+            cb(result)
+        })
     }
 }
+
+// Exporting the orm module
+module.exports = orm
