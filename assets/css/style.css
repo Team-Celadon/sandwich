@@ -18,7 +18,7 @@
 #menuDiv{
     border-style: solid;
     font-family: 'Playfair Display', serif;
-    width: 40%;
+    width: 50%;
     margin: 30px;
 }
 
@@ -120,6 +120,16 @@
     font-family: "Raleway", sans-serif;
 }
 
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+
+#vote {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+
+}
 
 
 
