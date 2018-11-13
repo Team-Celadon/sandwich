@@ -2,19 +2,24 @@
 
 
 #title {
-    font-family: 'Kumar One Outline', cursive;
+    font-family: 'Abril Fatface', cursive;
     width: 105%;
     text-align: center;
     background-color: red;
     padding: 30px;
 }
 
+#alaska {
+    font-family: 'Playfair Display', serif;
+}
+
 
 /* ===========================menu div================================ */
 #menuDiv{
     border-style: solid;
-    font-family: 'Raleway', sans-serif;
-    width: 20%
+    font-family: 'Playfair Display', serif;
+    width: 40%;
+    margin: 30px;
 }
 
 #nose {
@@ -33,15 +38,24 @@
 #leaderboardFeatures {
     border-style: solid;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
     width: 40%;
     display: inline-block;
-    margin:30px;
+    margin: 30px;
 }
 
 #top10 {
-    font-family: 'Kumar One Outline', cursive;
+    font-family: 'Playfair Display', serif;
     margin: 30px;
+}
+
+
+#caddy {
+    font-family: 'Playfair Display', serif;
+}
+
+#skelly {
+    font-family: 'Raleway', sans-serif; 
 }
 
 #giraffe {
@@ -50,17 +64,20 @@
     display: inline-block
 }
 
-
-#potato {
-    font-family: 'Kumar One Outline', cursive;
-    margin: 30px;
-}
-
 #baboon {
     width: 60%;;
     text-align: center;
     display: inline-block
 }
+
+#chilli {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
 
 /* 
 <!-- 
@@ -68,6 +85,13 @@
 =======================================SIGN UP & LOGIN===========================================    
 =======================================SIGN UP & LOGIN===========================================        
 =======================================SIGN UP & LOGIN=========================================== --> */
+
+#hideyho{
+    font-family: 'Playfair Display', serif;
+    margin: 30px;
+    text-align: center;
+}
+
 
 #octopus {
  width: 35%;
@@ -81,16 +105,25 @@
 }
 
 #grout {
-    
+    font-family: 'Playfair Display', serif;
+}
+
+#username {
+    font-family: "Raleway", sans-serif;
+}
+
+#email {
+    font-family: "Raleway", sans-serif;
+}
+
+#password{
+    font-family: "Raleway", sans-serif;
 }
 
 
 
 
 /* 
-font-family: 'Kumar One Outline', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'Crimson Text', serif;
+font-family: 'Abril Fatface', cursive;
 font-family: 'Raleway', sans-serif;
-font-family: 'Cormorant Garamond', serif;
 font-family: 'Playfair Display', serif; */
