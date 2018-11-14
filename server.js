@@ -1,17 +1,17 @@
 // Bringing in all of the dependencies
-const express = require('express')
-const PORT = process.env.PORT || 3030
-const app = express()
+const express = require("express");
+const PORT = process.env.PORT || 4000;
+const app = express();
 // Need to update this
-const routes = require(NULL)
+// const routes = require(NULL);
 
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+require("./routes/htmlroutes")(app);
+app.use(express.static(__dirname + "public/assets"));
 
-app.use(express.static(__dirname + '/assets'))
+app.use("/apiroutes", require("./routes/apiroutes"));
 
-app.use(routes)
-
-app.listen(PORT => {
-    console.log('Server listening on PORT: ' + PORT)
-})
+app.listen(process.env.port || 4000, function() {
+  console.log("Server listening on PORT: " + PORT);
+});
