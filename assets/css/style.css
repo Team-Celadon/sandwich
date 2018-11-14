@@ -9,7 +9,7 @@
     padding: 30px;
 }
 
-#alaska {
+.submitButton {
     font-family: 'Playfair Display', serif;
 }
 
@@ -35,7 +35,7 @@
 ================================weekly leaderboard & set menu============================ -->
 ================================weekly leaderboard & set menu============================ --> */
 
-#leaderboardFeatures {
+.leaderboardFeatures {
     border-style: solid;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -44,33 +44,33 @@
     margin: 30px;
 }
 
-#top10 {
+.top10 {
     font-family: 'Playfair Display', serif;
     margin: 30px;
 }
 
 
-#caddy {
+.burgerName {
     font-family: 'Playfair Display', serif;
 }
 
-#skelly {
+.burgerIngredients {
     font-family: 'Raleway', sans-serif; 
 }
 
-#giraffe {
+.burgerCard {
     width: 60%;;
     text-align: center;
     display: inline-block
 }
 
-#baboon {
+.leaderboard {
     width: 60%;;
     text-align: center;
     display: inline-block
 }
 
-#chilli {
+.submitButtonDiv {
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
@@ -86,27 +86,44 @@
 =======================================SIGN UP & LOGIN===========================================        
 =======================================SIGN UP & LOGIN=========================================== --> */
 
-#hideyho{
+.headingText{
     font-family: 'Playfair Display', serif;
     margin: 30px;
     text-align: center;
 }
 
 
-#octopus {
+#signUpDiv {
  width: 35%;
  display: inline-block;
  margin: 20px;
  
 }
 
-#alabama {
+.usernameDiv {
     width: 90;
 }
 
-#grout {
+.phoneNumberDiv {
+    width: 90%;
+}
+
+.passwordDiv {
+    width: 90%;
+}
+
+.usernameText {
     font-family: 'Playfair Display', serif;
 }
+
+.phoneNumberText {
+    font-family: "playfair Display", serif;
+}
+
+.passwordText {
+    font-family: "playfair Display", serif;
+}
+
 
 #username {
     font-family: "Raleway", sans-serif;
