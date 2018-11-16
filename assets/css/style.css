@@ -5,8 +5,8 @@
     font-family: 'Abril Fatface', cursive;
     width: 105%;
     text-align: center;
-    background-color: red;
     padding: 30px;
+    color: #435769;
 }
 
 .submitButton {
@@ -47,6 +47,7 @@
 .top10 {
     font-family: 'Playfair Display', serif;
     margin: 30px;
+    color: #435769;
 }
 
 
@@ -54,15 +55,54 @@
     font-family: 'Playfair Display', serif;
 }
 
-.burgerIngredients {
+#burgerIngredients1 {
     font-family: 'Raleway', sans-serif; 
 }
+
+#burgerIngredients2 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredients3 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredientsA {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredientsB {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredientsC {
+    font-family: 'Raleway', sans-serif; 
+}
+
+
 
 .burgerCard {
     width: 60%;;
     text-align: center;
-    display: inline-block
+    display: inline-block;
 }
+
+#burgercard1 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#burgercard2 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#burgercard3 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+
 
 .leaderboard {
     width: 60%;;
@@ -70,10 +110,33 @@
     display: inline-block
 }
 
+#leaderboardCard1 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#leaderboardCard2 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#leaderboardCard3 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
 .submitButtonDiv {
     text-align: center;
     font-family: 'Playfair Display', serif;
+    margin: 0 auto;
 }
+
+#choose7 {
+    margin: 0 auto;
+}
+
+
+
 
 
 
@@ -90,6 +153,7 @@
     font-family: 'Playfair Display', serif;
     margin: 30px;
     text-align: center;
+    color: #435769;
 }
 
 
@@ -97,8 +161,8 @@
  width: 35%;
  display: inline-block;
  margin: 20px;
- 
 }
+
 
 .usernameDiv {
     width: 90;
