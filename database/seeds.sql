@@ -33,7 +33,7 @@ INSERT INTO toppings (topping, sandwich_id)
 VALUES ("Gravy", 7), ("Cranberry Sauce", 7), ("Mashed Potatoes", 7);
 
 INSERT INTO toppings (topping, sandwich_id)
-VALUES ("Dandelion", 8), ("Portabello Mushrooms", 8), ("Avocado", 8), ("Hummus", 8), ("Brie", 8), ("Spinach", 8); 
+VALUES ("Dandelion Greens", 8), ("Portabello Mushrooms", 8), ("Avocado", 8), ("Hummus", 8), ("Brie", 8), ("Spinach", 8); 
 
 INSERT INTO toppings (topping, sandwich_id)
 VALUES ("American Cheese", 9), ("Lettuce", 9), ("Tomato", 9), ("Onion", 9), ("Ketchup", 9), ("Mustard", 9);
