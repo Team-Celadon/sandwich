@@ -1,5 +1,5 @@
 // Requiring the connection.js file
-const connection = require('./connection')
+const connection = require('./connection.js')
 
 // Creating the methods to interact with the database
 const orm = {
