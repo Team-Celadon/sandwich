@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 // var sandwichData = require("../data/sandwichData");
-// var waitListData = require("../data/waitinglistData");
 
 // ===============================================================================
 // ROUTING
