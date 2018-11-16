@@ -71,6 +71,10 @@ $(document).on("click", "#submitSandwich", function (event) {
     const api_id = "5c4b84e1";
     const api_key = "0fb5e387ed16a68d8def5124ddc1133b";
 
+    let totalCalories = 0;
+    let totalFat = 0;
+    let totalProtein = 0;
+
     for (k = 0; k < meatArray.length; k++) {
         var queryURL = "https://api.edamam.com/api/food-database/parser?ingr=" + meatArray[k] + "&app_id=" + api_id + "&app_key=" + api_key;
         $.ajax({
@@ -78,11 +82,49 @@ $(document).on("click", "#submitSandwich", function (event) {
             method: "GET"
         }).then(function (response) {
             console.log(response.hints[0].food);
-            var calories = response.hints[0].food.nutrients.ENERC_KCAL;
+            var calories = Number(response.hints[0].food.nutrients.ENERC_KCAL);
             console.log(calories);
+            totalCalories += calories;
             var fat = response.hints[0].food.nutrients.FAT;
             console.log(fat);
-            
+            totalFat += fat;
+            var protein = response.hints[0].food.nutrients.PROCNT;
+            console.log(protein);
+            totalProtein += protein;
+            console.log(totalCalories);
+            console.log(totalFat);
+            console.log(totalProtein);
+        })
+    };
+
+
+    for (l = 0; l < toppingsArray.length; l++) {
+        var queryURL = "https://api.edamam.com/api/food-database/parser?ingr=" + toppingsArray[l] + "&app_id=" + api_id + "&app_key=" + api_key;
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response.hints[0].food);
+            var calories = response.hints[0].food.nutrients.ENERC_KCAL;
+            console.log(calories);
+            if (calories !== undefined) {
+                totalCalories += calories;
+            }
+            var fat = response.hints[0].food.nutrients.FAT;
+            console.log(fat);
+            if (fat !== undefined) {
+                totalFat += fat;
+            }
+            var protein = response.hints[0].food.nutrients.PROCNT;
+            console.log(protein);
+            if (protein !== undefined) {
+                totalProtein += protein;
+            }
+            console.log(totalCalories);
+            console.log(totalFat);
+            console.log(totalProtein);
+
+            $("#nutritionInfo").text("Calories: " + Math.round(totalCalories) + " kcal | Protein: " + Math.round(totalProtein) + " g | Fat: " + Math.round(totalFat) + " g");
         })
     }
 
