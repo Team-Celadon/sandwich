@@ -10,13 +10,14 @@ let connection = mysql.createConnection({
     database: 'sandwiches_db'
 })
 
+
 // Checking the connection
 connection.connect(function (error) {
     if (error) {
-        console.log('Error connection: ' + error.stack )
+        console.log('Error connection: ' + error.stack)
     }
-    console.log('Connected as ID ' + connection.threadId)
+    console.log("Connected as ID " + connection.threadId)
 })
 
-// Exporting the connection
+// Exporting the connection module
 module.exports = connection
