@@ -1,8 +1,8 @@
 // Requiring mysql
-const mysql = require('mysql')
+var mysql = require('mysql')
 
 // Creating the database connection
-let connection = mysql.createConnection({
+var connection = mysql.createConnection({
     host: 'localhost',
     port: 8889,
     user: 'root',
@@ -10,11 +10,11 @@ let connection = mysql.createConnection({
     database: 'sandwiches_db'
 })
 
-
 // Checking the connection
 connection.connect(function (error) {
     if (error) {
         console.log('Error connection: ' + error.stack)
+        return
     }
     console.log("Connected as ID " + connection.threadId)
 })

@@ -1,5 +1,5 @@
 // Requiring the connection.js file
-const connection = require('./connection.js')
+let connection = require('./connection.js')
 
 // Creating the methods to interact with the database
 const orm = {
@@ -98,10 +98,26 @@ const orm = {
     updateRating: function (rating, value, sandwichId, userId, cb) {
         let queryString = 'UPDATE ratings SET ?? = ? WHERE sandwich_id = ? AND user_id = ?'
 
-        console.log(queryString, [rating, value, sandwichId, userId], function (error, result) {
+        console.log(queryString)
+
+        connection.query(queryString, [rating, value, sandwichId, userId], function (error, result) {
             if (error) {
                 throw error
             }
+            cb(result)
+        })
+    },
+    // Adding a new user to the database
+    addUser: function (newUsername, newPhoneNumber, newPassword, cb) {
+        let queryString = 'INSERT INTO user (username, phone, password) VALUES (?, ?, ?)'
+
+        console.log(queryString)
+
+        const q = connection.query(queryString, [newUsername, newPhoneNumber, newPassword], function (error, result) {
+            if (error) {
+                throw error
+            }
+            console.log(q.sql)
             cb(result)
         })
     }
