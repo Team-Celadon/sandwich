@@ -154,15 +154,15 @@
     margin: 30px;
     text-align: center;
     color: #435769;
+
 }
 
 
 #signUpDiv {
  width: 35%;
  display: inline-block;
- margin: 20px;
+ margin: auto;
 }
-
 
 .usernameDiv {
     width: 90;
@@ -189,6 +189,7 @@
 }
 
 
+
 #username {
     font-family: "Raleway", sans-serif;
 }
@@ -200,6 +201,24 @@
 #password{
     font-family: "Raleway", sans-serif;
 }
+
+#buttonclass123 {
+    text-align: center;
+    color: #435769;
+    background-color: white;
+}
+
+#choose8 {
+    text-align: center;
+    color: #435769;
+    background-color: white;
+}
+
+#justCSS {
+    width: 100%;
+    border: solid 1px blue;
+}
+
 
 /* ===========================vote================================ */
 /* ===========================vote================================ */
