@@ -33,7 +33,7 @@
                             <input type="text" class="form-control" id="inputSandwichName">
                         </div>
                     </div>
-                    <div class="chooseMeat px-2 pt-3">
+                    <div class="chooseMeat px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose up to 3 meats:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input meat" type="checkbox" name="meat" id="hamburger" value="Hamburger">
@@ -85,8 +85,7 @@
                             <label class="form-check-label" for="sausage">Sausage</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="chooseCheese px-2">
+                    <div class="chooseCheese px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose one cheese:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input cheese" type="radio" name="cheese" id="american" value="American Cheese">
@@ -121,8 +120,7 @@
                             <label class="form-check-label" for="blueCheese">Blue Cheese</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="chooseCondiments px-2">
+                    <div class="chooseCondiments px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose up to 3 condiments:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input condiment" type="checkbox" name="condiment" id="ketchup"
@@ -172,8 +170,7 @@
                             <label class="form-check-label" for="ranch">Ranch</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="chooseToppings px-2">
+                    <div class="chooseToppings px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose a maximum of 10 additional toppings:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="topping" id="onion" value="Onion">
@@ -282,21 +279,24 @@
                         </div>
                     </div>
                     <br>
-                    <button type="submit" id="submitSandwich" class="btn btn-light px-2 btn-block mx-auto my-1">Stack My Sandwich ></button>
+                    <button type="submit" id="submitSandwich" class="btn btn-light px-2 btn-block mx-auto my-1">Stack
+                        My Sandwich ></button>
                 </form>
                 <br>
             </div>
             <div class="col-5" id="sandwichInfo">
                 <div class="card mx-auto" style="width: 80%">
                     <div class="card-body">
-                        <h4 class="card-title font-weight-bold text-justify" id="cardSandwichName"></h4>
-                        <p class="card-text font-weight-light" id="cardUsername">Created By:</p>
+                        <h4 class="card-title font-weight-bold text-center" id="cardSandwichName"></h4>
+                        <p class="card-text font-weight-light bg-light p-2" id="cardUsername">Created By:</p>
                     </div>
                     <ul class="list-group list-group-flush toppings-list">
                     </ul>
-                    <div class="card-body">
-                        <p id="nutritionInfo"></p>
-                        <a href="#" class="card-link">Vote</a>
+                    <div class="card-body text-center pt-2">
+                        <p class="text-center font-weight-bold" id="nutritionInfo"></p>
+                        <div class="card-vote py-3">
+                            <button href="#" class="card-link btn btn-light" id="cardVoteBtn">Rate</button>
+                        </div>
                     </div>
                 </div>
             </div>

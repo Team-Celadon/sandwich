@@ -1,6 +1,8 @@
 // Listing the dependencies
 const express = require('express')
+
 const orm = require('../config/orm')
+
 
 // Creating a router instance
 const router = express.Router()
