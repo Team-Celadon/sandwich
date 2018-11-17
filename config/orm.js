@@ -1,4 +1,5 @@
 // Requiring the connection.js file
+
 let connection = require('./connection.js')
 
 // Creating the methods to interact with the database

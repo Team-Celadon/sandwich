@@ -1,3 +1,4 @@
+
 // Requiring mysql
 var mysql = require('mysql')
 

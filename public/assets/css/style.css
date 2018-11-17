@@ -1,0 +1,119 @@
+#title {
+  font-family: "Abril Fatface", cursive;
+  width: 105%;
+  text-align: center;
+  background-color: red;
+  padding: 30px;
+}
+
+#alaska {
+  font-family: "Playfair Display", serif;
+}
+
+#menuDiv {
+  border-style: solid;
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  margin: 30px;
+}
+
+#nose {
+  font-family: "Crimson Text", serif;
+}
+
+#top {
+  font-family: "Raleway", sans-serif;
+}
+
+#leaderboardFeatures {
+  border-style: solid;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  width: 40%;
+  display: inline-block;
+  margin: 30px;
+}
+
+#top10 {
+  font-family: "Playfair Display", serif;
+  margin: 30px;
+}
+
+#caddy {
+  font-family: "Playfair Display", serif;
+}
+
+#skelly {
+  font-family: "Raleway", sans-serif;
+}
+
+#giraffe {
+  width: 60%;
+  text-align: center;
+  display: inline-block;
+}
+
+#baboon {
+  width: 60%;
+  text-align: center;
+  display: inline-block;
+}
+
+#chilli {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+/* 
+<!-- 
+=======================================SIGN UP & LOGIN===========================================
+=======================================SIGN UP & LOGIN===========================================    
+=======================================SIGN UP & LOGIN===========================================        
+=======================================SIGN UP & LOGIN=========================================== --> */
+
+#hideyho {
+  font-family: "Playfair Display", serif;
+  margin: 30px;
+  text-align: center;
+}
+
+#octopus {
+  width: 35%;
+  display: inline-block;
+  margin: 20px;
+}
+
+#alabama {
+  width: 90;
+}
+
+#grout {
+  font-family: "Playfair Display", serif;
+}
+
+#username {
+  font-family: "Raleway", sans-serif;
+}
+
+#email {
+  font-family: "Raleway", sans-serif;
+}
+
+#password {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+
+#vote {
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+}
+
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif; */
