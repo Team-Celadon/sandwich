@@ -1,0 +1,279 @@
+
+
+
+#title {
+    font-family: 'Abril Fatface', cursive;
+    width: 105%;
+    text-align: center;
+    padding: 30px;
+    color: #435769;
+}
+
+.submitButton {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* ===========================menu div================================ */
+#menuDiv{
+    border-style: solid;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+    margin: 30px;
+}
+
+#nose {
+    font-family: 'Crimson Text', serif;
+    }
+
+#top {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ================================weekly leaderboard & set menu============================ -->
+================================weekly leaderboard & set menu============================ -->
+================================weekly leaderboard & set menu============================ -->
+================================weekly leaderboard & set menu============================ --> */
+
+.leaderboardFeatures {
+    border-style: solid;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    width: 40%;
+    display: inline-block;
+    margin: 30px;
+}
+
+.top10 {
+    font-family: 'Playfair Display', serif;
+    margin: 30px;
+    color: #435769;
+}
+
+
+.burgerName {
+    font-family: 'Playfair Display', serif;
+}
+
+#burgerIngredients1 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredients2 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredients3 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredientsA {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredientsB {
+    font-family: 'Raleway', sans-serif; 
+}
+
+#burgerIngredientsC {
+    font-family: 'Raleway', sans-serif; 
+}
+
+
+
+.burgerCard {
+    width: 60%;;
+    text-align: center;
+    display: inline-block;
+}
+
+#burgercard1 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#burgercard2 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#burgercard3 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+
+
+.leaderboard {
+    width: 60%;;
+    text-align: center;
+    display: inline-block
+}
+
+#leaderboardCard1 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#leaderboardCard2 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+#leaderboardCard3 {
+    margin: 0 auto;
+    background-color: #ddf5f4;
+}
+
+.submitButtonDiv {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+}
+
+#choose7 {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* 
+<!-- 
+=======================================SIGN UP & LOGIN===========================================
+=======================================SIGN UP & LOGIN===========================================    
+=======================================SIGN UP & LOGIN===========================================        
+=======================================SIGN UP & LOGIN=========================================== --> */
+
+.headingText{
+    font-family: 'Playfair Display', serif;
+    margin: 30px;
+    text-align: center;
+    color: #435769;
+}
+
+
+#signUpDiv {
+ width: 35%;
+ display: inline-block;
+ margin: 20px;
+}
+
+
+.usernameDiv {
+    width: 90;
+}
+
+.phoneNumberDiv {
+    width: 90%;
+}
+
+.passwordDiv {
+    width: 90%;
+}
+
+.usernameText {
+    font-family: 'Playfair Display', serif;
+}
+
+.phoneNumberText {
+    font-family: "playfair Display", serif;
+}
+
+.passwordText {
+    font-family: "playfair Display", serif;
+}
+
+
+#username {
+    font-family: "Raleway", sans-serif;
+}
+
+#email {
+    font-family: "Raleway", sans-serif;
+}
+
+#password{
+    font-family: "Raleway", sans-serif;
+}
+
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+/* ===========================vote================================ */
+
+#vote {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+
+
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+
+/* Sarah */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.container-fluid {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header {
+    text-align: center; 
+    margin: 0 auto;
+    padding: 20px;   
+}
+
+#createSandwichForm { 
+    background-color: rgba(102, 182, 178, 0.445); 
+}
+
+.card-container {
+    padding: 50px;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+#submitSandwich {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+.chooseMeat {
+    background-color: rgba(255, 255, 255, 0.185);    
+}
+
+
+.chooseCondiments {
+    background-color: rgba(255, 255, 255, 0.185);  
+}
+
+#cardVoteBtn {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+.card-vote {
+    background-color: rgba(102, 182, 178, 0.445); 
+}
