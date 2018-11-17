@@ -235,3 +235,62 @@
 font-family: 'Abril Fatface', cursive;
 font-family: 'Raleway', sans-serif;
 font-family: 'Playfair Display', serif; */
+
+
+/* Sarah */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.container-fluid {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header {
+    text-align: center; 
+    margin: 0 auto;
+    padding: 20px;   
+}
+
+#createSandwichForm { 
+    background-color: rgba(102, 182, 178, 0.445); 
+}
+
+.card-container {
+    padding: 50px;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+#submitSandwich {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+.chooseMeat {
+    background-color: rgba(255, 255, 255, 0.185);    
+}
+
+
+.chooseCondiments {
+    background-color: rgba(255, 255, 255, 0.185);  
+}
+
+#cardVoteBtn {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+.card-vote {
+    background-color: rgba(102, 182, 178, 0.445); 
+}
