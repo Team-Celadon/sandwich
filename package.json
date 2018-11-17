@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/Team-Celadon/sandwich#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "local": "^0.3.3",
     "mysql": "^2.16.0",
-    "passport": "^0.4.0"
+    "passport": "^0.4.0",
+    "phone-fns": "^3.0.0"
   }
 }
