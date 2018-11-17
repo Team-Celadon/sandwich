@@ -294,13 +294,65 @@
                     </ul>
                     <div class="card-body text-center pt-2">
                         <p class="text-center font-weight-bold" id="nutritionInfo"></p>
-                        <div class="card-vote py-3">
-                            <button href="#" class="card-link btn btn-light" id="cardVoteBtn">Rate</button>
+                        <div class="card-rate py-3">
+                            <button class="card-link btn btn-light" data-toggle="modal" data-target="#ratingModal" id="cardRateBtn">Rate</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="ratingModal" tabindex="-1" role="dialog" aria-labelledby="ratingModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rateModalTitle">Rate this Sandwich</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate1" id="rate1" value="1">
+                                <label class="form-check-label" for="rate1">
+                                    1 (Worst)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate2" id="rate2" value="2">
+                                <label class="form-check-label" for="rate2">
+                                    2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate3" id="rate3" value="3">
+                                <label class="form-check-label" for="rate3">
+                                    3
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate4" id="rate4" value="4">
+                                <label class="form-check-label" for="rate4">
+                                    4
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate5" id="rate5" value="5">
+                                <label class="form-check-label" for="rate5">
+                                    5 (Best)
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-info">Rate It</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 

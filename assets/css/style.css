@@ -267,13 +267,17 @@ h6 {
     background-color: rgba(255, 255, 255, 0.185);  
 }
 
-#cardVoteBtn {
+#cardRateBtn {
     font-family: 'Poppins', sans-serif;
     width: 50%;
     border: 2px solid gray;
     font-weight: bold;
 }
 
-.card-vote {
+.card-rate {
     background-color: rgba(102, 182, 178, 0.445); 
+}
+
+.modal-header {
+    background-color: rgba(102, 182, 178, 0.445);
 }
