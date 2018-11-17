@@ -38,6 +38,7 @@
 
 .leaderboardFeatures {
     border-style: solid;
+    border-color: #435769;
     text-align: center;
     font-family: 'Playfair Display', serif;
     width: 40%;
@@ -188,17 +189,6 @@
 
 
 
-#username {
-    font-family: "Raleway", sans-serif;
-}
-
-#email {
-    font-family: "Raleway", sans-serif;
-}
-
-#password{
-    font-family: "Raleway", sans-serif;
-}
 
 #buttonclass123 {
     text-align: center;
@@ -206,7 +196,7 @@
     background-color: white;
 }
 
-#choose8 {
+#submit-newuser {
     display: block;
     margin: auto;
     color: #435769;
@@ -215,18 +205,6 @@
 
 #justCSS {
     width: 100%;
-}
-
-
-/* ===========================vote================================ */
-/* ===========================vote================================ */
-/* ===========================vote================================ */
-/* ===========================vote================================ */
-
-#vote {
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
-
 }
 
 
@@ -239,11 +217,13 @@ font-family: 'Playfair Display', serif; */
 
 /* Sarah */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubik', sans-serif;
+    font-family: "playfair Display", serif;
+    color: #435769;
 }
 
 h6 {
     font-weight: bold;
+    color: #435769;
 }
 
 .container-fluid {
@@ -258,6 +238,7 @@ h6 {
 
 #createSandwichForm { 
     background-color: rgba(102, 182, 178, 0.445); 
+    color: #435769;
 }
 
 .card-container {
@@ -269,28 +250,34 @@ h6 {
 }
 
 #submitSandwich {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     width: 50%;
     border: 2px solid gray;
     font-weight: bold;
+    color: #435769;
 }
 
 .chooseMeat {
-    background-color: rgba(255, 255, 255, 0.185);    
+    background-color: rgba(255, 255, 255, 0.185);  
+    color: #435769;  
+    
 }
 
 
 .chooseCondiments {
-    background-color: rgba(255, 255, 255, 0.185);  
+    background-color: rgba(255, 255, 255, 0.185); 
+    color: #435769; 
 }
 
 #cardVoteBtn {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', Serif;
     width: 50%;
     border: 2px solid gray;
     font-weight: bold;
+    color: #435769;
 }
 
 .card-vote {
     background-color: rgba(102, 182, 178, 0.445); 
+    color: #435769;
 }
