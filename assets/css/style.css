@@ -243,7 +243,6 @@ h6 {
     background-color: rgba(102, 182, 178, 0.445); 
 }
 
-
 .card-container {
     padding: 50px;
 }
@@ -261,4 +260,20 @@ h6 {
 
 .chooseMeat {
     background-color: rgba(255, 255, 255, 0.185);    
+}
+
+
+.chooseCondiments {
+    background-color: rgba(255, 255, 255, 0.185);  
+}
+
+#cardVoteBtn {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+.card-vote {
+    background-color: rgba(102, 182, 178, 0.445); 
 }

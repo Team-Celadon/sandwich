@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
     $("#sandwichInfo").hide();
@@ -68,8 +70,8 @@ $(document).on("click", "#submitSandwich", function (event) {
         $(".toppings-list").append(newTopping);
     }
 
-    const api_id = "5c4b84e1";
-    const api_key = "0fb5e387ed16a68d8def5124ddc1133b";
+    const api_id = "5c4b84e1"
+    const api_key = "0fb5e387ed16a68d8def5124ddc1133b"
 
     let totalCalories = 0;
     let totalFat = 0;
@@ -81,15 +83,15 @@ $(document).on("click", "#submitSandwich", function (event) {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response.hints[0].food);
+            // console.log(response.hints[0].food);
             var calories = Number(response.hints[0].food.nutrients.ENERC_KCAL);
-            console.log(calories);
+            // console.log(calories);
             totalCalories += calories;
             var fat = response.hints[0].food.nutrients.FAT;
-            console.log(fat);
+            // console.log(fat);
             totalFat += fat;
             var protein = response.hints[0].food.nutrients.PROCNT;
-            console.log(protein);
+            // console.log(protein);
             totalProtein += protein;
             console.log(totalCalories);
             console.log(totalFat);
@@ -104,19 +106,19 @@ $(document).on("click", "#submitSandwich", function (event) {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response.hints[0].food);
+            // console.log(response.hints[0].food);
             var calories = response.hints[0].food.nutrients.ENERC_KCAL;
-            console.log(calories);
+            // console.log(calories);
             if (calories !== undefined) {
                 totalCalories += calories;
             }
             var fat = response.hints[0].food.nutrients.FAT;
-            console.log(fat);
+            // console.log(fat);
             if (fat !== undefined) {
                 totalFat += fat;
             }
             var protein = response.hints[0].food.nutrients.PROCNT;
-            console.log(protein);
+            // console.log(protein);
             if (protein !== undefined) {
                 totalProtein += protein;
             }
