@@ -1,4 +1,4 @@
-let keys = require('../../server')
+import keys from "../../server"
 
 $(document).ready(function () {
 
