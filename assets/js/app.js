@@ -1,4 +1,4 @@
-import keys from "../../server"
+
 
 $(document).ready(function () {
 
@@ -66,9 +66,9 @@ $(document).on("click", "#submitSandwich", function (event) {
         $(".toppings-list").append(newTopping);
     }
 
-    const api_id = keys.apiid
-    const api_key = keys.apikey
-
+    const api_id = "5c4b84e1"
+    const api_key = "0fb5e387ed16a68d8def5124ddc1133b"
+    
     let totalCalories = 0;
     let totalFat = 0;
     let totalProtein = 0;
