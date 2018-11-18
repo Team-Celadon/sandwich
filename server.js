@@ -3,10 +3,6 @@ const express = require('express')
 const phoneFns = require('phone-fns')
 let PORT = process.env.PORT || 3030
 const app = express()
-let keys = {
-    apiid: process.env.api_id,
-    apikey: process.env.api_key
-}
 const api = require('./routes/apiroutes')
 const html = require('./routes/htmlroutes')
 
@@ -22,4 +18,3 @@ app.listen(PORT, function() {
     console.log('Server listening on PORT: ' + PORT)
 })
 
-export default "keys"
