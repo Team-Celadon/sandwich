@@ -1,8 +1,12 @@
 // Bringing in all of the dependencies
 const express = require('express')
 const phoneFns = require('phone-fns')
-var PORT = process.env.PORT || 3030
+let PORT = process.env.PORT || 3030
 const app = express()
+let keys = {
+    apiid: process.env.api_id,
+    apikey: process.env.api_key
+}
 const api = require('./routes/apiroutes')
 const html = require('./routes/htmlroutes')
 
@@ -17,3 +21,5 @@ app.use(html)
 app.listen(PORT, function() {
     console.log('Server listening on PORT: ' + PORT)
 })
+
+module.exports = keys

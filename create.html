@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Spicy's Secret Sandwich Spot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
     <script src="/js/app.js"></script>
 </head>
 
@@ -30,10 +30,10 @@
                         <h4>Create Your Own Sandwich</h4>
                         <div class="form-group">
                             <label for="inputSandwichName">Sandwich Name:</label>
-                            <input type="text" class="form-control" id="inputSandwichName">
+                            <input required type="text" class="form-control" id="inputSandwichName">
                         </div>
                     </div>
-                    <div class="chooseMeat px-2 pt-3">
+                    <div class="chooseMeat px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose up to 3 meats:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input meat" type="checkbox" name="meat" id="hamburger" value="Hamburger">
@@ -85,8 +85,7 @@
                             <label class="form-check-label" for="sausage">Sausage</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="chooseCheese px-2">
+                    <div class="chooseCheese px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose one cheese:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input cheese" type="radio" name="cheese" id="american" value="American Cheese">
@@ -121,8 +120,7 @@
                             <label class="form-check-label" for="blueCheese">Blue Cheese</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="chooseCondiments px-2">
+                    <div class="chooseCondiments px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose up to 3 condiments:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input condiment" type="checkbox" name="condiment" id="ketchup"
@@ -172,8 +170,7 @@
                             <label class="form-check-label" for="ranch">Ranch</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="chooseToppings px-2">
+                    <div class="chooseToppings px-2 pt-3 border-right border-left border-secondary">
                         <h6>Choose a maximum of 10 additional toppings:</h6>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="topping" id="onion" value="Onion">
@@ -282,25 +279,80 @@
                         </div>
                     </div>
                     <br>
-                    <button type="submit" id="submitSandwich" class="btn btn-light px-2 btn-block mx-auto my-1">Stack My Sandwich ></button>
+                    <button type="submit" id="submitSandwich" class="btn btn-light px-2 btn-block mx-auto my-1">Stack
+                        My Sandwich ></button>
                 </form>
                 <br>
             </div>
             <div class="col-5" id="sandwichInfo">
                 <div class="card mx-auto" style="width: 80%">
                     <div class="card-body">
-                        <h4 class="card-title font-weight-bold text-justify" id="cardSandwichName"></h4>
-                        <p class="card-text font-weight-light" id="cardUsername">Created By:</p>
+                        <h4 class="card-title font-weight-bold text-center" id="cardSandwichName"></h4>
+                        <p class="card-text font-weight-light bg-light p-2" id="cardUsername">Created By:</p>
                     </div>
                     <ul class="list-group list-group-flush toppings-list">
                     </ul>
-                    <div class="card-body">
-                        <p id="nutritionInfo"></p>
-                        <a href="#" class="card-link">Vote</a>
+                    <div class="card-body text-center pt-2">
+                        <p class="text-center font-weight-bold" id="nutritionInfo"></p>
+                        <div class="card-rate py-3">
+                            <button class="card-link btn btn-light" data-toggle="modal" data-target="#ratingModal" id="cardRateBtn">Rate</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="ratingModal" tabindex="-1" role="dialog" aria-labelledby="ratingModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rateModalTitle">Rate this Sandwich</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate1" id="rate1" value="1">
+                                <label class="form-check-label" for="rate1">
+                                    1 (Worst)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate2" id="rate2" value="2">
+                                <label class="form-check-label" for="rate2">
+                                    2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate3" id="rate3" value="3">
+                                <label class="form-check-label" for="rate3">
+                                    3
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate4" id="rate4" value="4">
+                                <label class="form-check-label" for="rate4">
+                                    4
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rate5" id="rate5" value="5">
+                                <label class="form-check-label" for="rate5">
+                                    5 (Best)
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-info">Rate It</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 
