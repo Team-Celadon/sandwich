@@ -22,4 +22,4 @@ app.listen(PORT, function() {
     console.log('Server listening on PORT: ' + PORT)
 })
 
-module.exports = keys
+export default "keys"
