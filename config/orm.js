@@ -26,6 +26,7 @@ const orm = {
             if (error) {
                 throw error
             }
+            console.log(result)
             cb(result)
         })
     },

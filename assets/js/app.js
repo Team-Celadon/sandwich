@@ -54,6 +54,10 @@ $(document).on("click", "#submitSandwich", function (event) {
     var sandwichName = $("#inputSandwichName").val().trim();
     $("#cardSandwichName").text(sandwichName);
 
+    // // Populating the sandwich made card with the name of the user
+    // var user = $(this).data('username')
+    // $('#cardUsername').text('Created by: ' + user)
+
     for (i = 0; i < meatArray.length; i++) {
         var newItem = $("<li></li>").text(meatArray[i]);
         newItem.addClass("list-group-item");
@@ -68,7 +72,7 @@ $(document).on("click", "#submitSandwich", function (event) {
 
     const api_id = "5c4b84e1"
     const api_key = "0fb5e387ed16a68d8def5124ddc1133b"
-    
+
     let totalCalories = 0;
     let totalFat = 0;
     let totalProtein = 0;
