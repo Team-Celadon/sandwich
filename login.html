@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/kyanite@latest/dist/kyanite.min.js"></script>
+<script src="/js/login.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+
+    <title>Login</title>
+</head>
+<body>
+
+
+<h1 id = title> Spicy's Secret Spot</h1>
+
+<!-- 
+=======================================SIGN UP & LOGIN===========================================
+=======================================SIGN UP & LOGIN===========================================    
+=======================================SIGN UP & LOGIN===========================================        
+=======================================SIGN UP & LOGIN=========================================== -->
+
+<h1 class = "headingText"> Log in or Sign up:</h1>
+
+
+
+<div id = "signUpDiv">
+<div class="card" id="sign-up">
+
+<h3 class = "top10">Sign up</h3>
+
+    <div class="card-body">
+        <form id="new-user">
+            <div class="form-group" class = "usernameDiv" id = "usernameDiv1">
+                <label for="username" class = "usernameText" id = "usernameText1">Username</label>
+                <input required name="newUsername" type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+
+            <div class="form-group" class = "phoneNumberDiv" id = "phoneNumberDiv">
+                <label for="phone" class = phoneNumberText id = "phoneNumberText">Phone Number</label>
+                <input required name="newPhone" type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group" class = "passwordDiv" id = "passwordDiv1">
+                <label for="password" class = "passwordText" id = "passwordText1">Password</label>
+                <input required name="newPassword" type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+
+           <button type="submit" class = "submitButton" id="submit-newuser">Submit</button>    
+
+        </form>
+    </div>
+</div>
+</div>
+
+<!--====================================LOGIN=========================================== -->
+
+<div id = "signUpDiv">
+<div class="card" id="user-login">
+        <h3 class = "top10">Log in</h3>
+
+    <div class="card-body">
+        <form id="current-user">
+            <div class="form-group" class = "usernameDiv" id = "usernameDiv2">
+                <label for="username" class = "usernameText" id = "usernameText2">Username</label>
+                <input required name="username" type="password" class="form-control" id="username2" placeholder="Username">
+            </div>
+
+            <div class="form-group" class = "passwordDiv" id = "passwordDiv2">
+                <label for="password" class = "passwordText" id = "passwordText2">Password</label>
+                <input required name="password" type="password" class="form-control" id="password2" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="submitButton" id="choose9">Submit</button> 
+        </form>
+    </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/phone-fns@latest/dist/phone-fns.min.js"></script>
+</body>
+</html>
