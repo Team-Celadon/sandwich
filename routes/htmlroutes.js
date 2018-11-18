@@ -6,7 +6,7 @@ const path = require('path')
 const router = express.Router()
 
 // A route to display the login page
-router.get('/login', function (req, res) {
+router.get('/', function (req, res) {
     res.sendFile(path.resolve('login.html'))
 })
 
@@ -18,11 +18,6 @@ router.get('/create', function (req, res) {
 // A route to display the featured sandwiches
 router.get('/features', function (req, res) {
     res.sendFile(path.resolve('features.html'))
-})
-
-// A route to display the voting page for the leaderboard
-router.get('/vote', function (req, res) {
-    res.sendFile(path.resolve('vote.html'))
 })
 
 module.exports = router

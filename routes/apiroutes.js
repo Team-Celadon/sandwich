@@ -7,7 +7,7 @@ const { isCorrectLength } = require("simply_valid/is")
 const router = express.Router()
 
 // Registering a user
-router.post('/login', function (req, res) {
+router.post('/', function (req, res) {
     orm.addUser(req.body.username, req.body.phone, req.body.password, function (result) {
       console.log(req.body.username)
       res.json({ id: result.insertId })
