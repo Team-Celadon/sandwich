@@ -14,10 +14,15 @@ router.post('/login', function (req, res) {
 })
 
 // Checking if a user is in the database
-router.post('/login', function (req, res) {
-  orm.checkUser(req.body.username, req.body.password, function (result) {
-    console.log('Currently checking database')
-    res.json({result})
+router.post('/api/login', function (req, res) {
+  console.log(req.body)
+  console.log(req.body.username)
+  orm.checkUser(req.body.username, req.body.password, function (error, result) {
+    if (error) {
+      throw error
+    }
+    console.log(Object.keys(result[0]))
+    console.log(res.json({ id: result.insertId }))
   })
 })
 

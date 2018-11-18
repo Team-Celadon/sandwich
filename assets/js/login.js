@@ -25,23 +25,22 @@ $(document).ready(function () {
     })
 
     $('#current-user').on('submit', function (event) {
-        event.preventDefault()
-
+        // event.preventDefault()
         var currentUserInfo = {
             username: K.trim($('#username2').val()),
             password: K.trim($('#password2').val())
         }
 
-            $.ajax('/login', {
-                type: 'GET',
+            $.ajax('/api/login', {
+                type: 'POST',
                 data: currentUserInfo,
                 success: function (response) {
-                    if (response == 'success') {
+                    if (response.statusCode === 200) {
                         console.log('It worked!')
 
                         window.location = '/features'
                     } else {
-                        console.log('Not in the database')
+                        console.log(response)
 
                         window.location = '/login'
                     }

@@ -122,16 +122,11 @@ const orm = {
     },
     // Function for checking if the user is in the database
     checkUser: function (currentUsername, currentPassword, cb) {
-        let queryString = 'SELECT id FROM user WHERE username = ? AND password = ?'
+        let queryString = 'SELECT * FROM user WHERE username = ? AND password = ?'
 
         console.log(queryString)
 
-        connection.query(queryString, [currentUsername, currentPassword], function (error, result) {
-            if (error) {
-                throw error
-            }
-            cb(result)
-        })
+        connection.query(queryString, [currentUsername, currentPassword], cb)
     }
 }
 
