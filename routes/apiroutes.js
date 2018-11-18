@@ -73,6 +73,17 @@ router.post('/api/create/toppings', function(req, res) {
   }
 })
 
+router.get('/api/menu', function(req, res) {
+  orm.selectStandard(function (data) {
+    var sandwich = {
+      sandwiches: data
+    }
+    console.log(sandwich)
+    
+    res.json(data)
+  })
+})
+
 
 // Exporting the router
   module.exports = router
