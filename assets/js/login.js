@@ -12,7 +12,7 @@ $(document).ready(function () {
             password: K.trim($("#password").val())
         }
 
-        $.ajax("/login", {
+        $.ajax("/", {
             type: "POST",
             data: userInfo
         }).then(
