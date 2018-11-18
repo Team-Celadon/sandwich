@@ -113,11 +113,23 @@ const orm = {
 
         console.log(queryString)
 
-        const q = connection.query(queryString, [newUsername, newPhoneNumber, newPassword], function (error, result) {
+        connection.query(queryString, [newUsername, newPhoneNumber, newPassword], function (error, result) {
             if (error) {
                 throw error
             }
-            console.log(q.sql)
+            cb(result)
+        })
+    },
+    // Function for checking if the user is in the database
+    checkUser: function (currentUsername, currentPassword, cb) {
+        let queryString = 'SELECT id FROM user WHERE username = ? AND password = ?'
+
+        console.log(queryString)
+
+        connection.query(queryString, [currentUsername, currentPassword], function (error, result) {
+            if (error) {
+                throw error
+            }
             cb(result)
         })
     }

@@ -87,23 +87,5 @@ $(document).on("click", "#submitSandwich", function (event) {
 
     $("#sandwichInfo").show();
 
-// On click event for submitting a new user
-    $(document).on("click", "#submit-newuser", function (event) {
-        event.preventDefault()
-        console.log('this was registered')
-        var newName = $("#username").val().trim()
-        var newPhone = $("#phone").val()
-        var newPassword = $("#password").val().trim()
 
-        $.ajax("/login", {
-            type: "POST",
-            data: { username: newName, phone: newPhone, password: newPassword }
-        }).then(
-            function () {
-                console.log('Added a new user to the database!')
-
-                window.location = '/features'
-            }
-        )
-    })
 })

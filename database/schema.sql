@@ -8,7 +8,7 @@ USE sandwiches_db;
 CREATE TABLE user (
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(100) NOT NULL,
-    phone INT(10) NOT NULL,
+    phone INT(10) NULL,
     password VARCHAR(50) NOT NULL,
     PRIMARY KEY (id)
 );
@@ -41,7 +41,7 @@ CREATE TABLE meat (
 CREATE TABLE ratings (
     id INT NOT NULL AUTO_INCREMENT,
     rating INT(2) NOT NULL,
-    user_id INT NOT NULL,
+    user_id INT NULL,
     sandwich_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES user(id),
