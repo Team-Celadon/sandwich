@@ -2,6 +2,17 @@
 const K = kyanite
 
 $(document).ready(function () {
+
+// Hide signup form until 'create account' button is clicked
+    $("#signUpDiv").hide();
+
+// When 'create account' button is clicked the login is hidden and sign up is displayed
+    $("#createNewAccount").on("click", function() {
+        $("#signUpDiv").show()
+        $("#loginDiv").hide()
+        $("#createNewAccount").hide()
+    })
+
 // On click event for submitting a new user
     $("#new-user").on("submit", function (event) {
         event.preventDefault()
