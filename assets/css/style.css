@@ -4,33 +4,22 @@ body {
 
 
 #title {
-    font-family: 'Abril Fatface', cursive;
-    width: 105%;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
     text-align: center;
     padding: 30px;
-    color: #435769;
 }
 
-.submitButton {
-    font-family: 'Playfair Display', serif;
-}
 
 
 /* ===========================menu div================================ */
 #menuDiv{
     border-style: solid;
-    font-family: 'Playfair Display', serif;
     width: 50%;
     margin: 30px;
 }
 
-#nose {
-    font-family: 'Crimson Text', serif;
-    }
 
-#top {
-    font-family: 'Raleway', sans-serif;
-}
 
 /* ================================weekly leaderboard & set menu============================ -->
 ================================weekly leaderboard & set menu============================ -->
@@ -40,45 +29,44 @@ body {
 .leaderboardFeatures {
     border-style: solid;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
     width: 40%;
-    display: inline-block;
-    margin: 30px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 .top10 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
     margin: 30px;
-    color: #435769;
 }
 
 
 .burgerName {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #burgerIngredients1 {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 #burgerIngredients2 {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 #burgerIngredients3 {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 #burgerIngredientsA {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 #burgerIngredientsB {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 #burgerIngredientsC {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 
@@ -91,17 +79,17 @@ body {
 
 #burgercard1 {
     margin: 0 auto;
-    background-color: #ddf5f4;
+    background-color: rgba(102, 182, 178, 0.445);
 }
 
 #burgercard2 {
     margin: 0 auto;
-    background-color: #ddf5f4;
+    background-color: rgba(102, 182, 178, 0.445);
 }
 
 #burgercard3 {
     margin: 0 auto;
-    background-color: #ddf5f4;
+    background-color: rgba(102, 182, 178, 0.445);
 }
 
 
@@ -114,17 +102,17 @@ body {
 
 #leaderboardCard1 {
     margin: 0 auto;
-    background-color: #ddf5f4;
+    background-color: rgba(102, 182, 178, 0.445);
 }
 
 #leaderboardCard2 {
     margin: 0 auto;
-    background-color: #ddf5f4;
+    background-color: rgba(102, 182, 178, 0.445); 
 }
 
 #leaderboardCard3 {
     margin: 0 auto;
-    background-color: #ddf5f4;
+    background-color: rgba(102, 182, 178, 0.445);
 }
 
 .submitButtonDiv {
@@ -137,11 +125,62 @@ body {
     margin: 0 auto;
 }
 
+#create-new {
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
 
+.lb2 {
+    float: right;
+}
 
+.lb1 {
+    float: left;
+}
 
+#Choose1 {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
 
+#Choose2 {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
 
+#Choose3 {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+#choose4 {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+#choose5 {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
+
+#choose6 {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
 
 
 /* 
@@ -152,18 +191,22 @@ body {
 =======================================SIGN UP & LOGIN=========================================== --> */
 
 .headingText{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
     margin: 30px;
     text-align: center;
-    color: #435769;
+    /* color: #435769; */
 }
 
 
 #signUpDiv {
  width: 35%;
- display: inline-block;
- margin: 20px;
+ margin: 0 auto;
 }
+
+#loginDiv {
+    width: 35%;
+    margin: 0 auto;
+   }
 
 
 .usernameDiv {
@@ -179,47 +222,50 @@ body {
 }
 
 .usernameText {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .phoneNumberText {
-    font-family: "playfair Display", serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .passwordText {
-    font-family: "playfair Display", serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 #username {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #email {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #password{
-    font-family: "Raleway", sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 
-/* ===========================vote================================ */
-/* ===========================vote================================ */
-/* ===========================vote================================ */
-/* ===========================vote================================ */
-
-#vote {
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
-
+#submit-newuser {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
 }
 
+#submitLogin {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
 
-
-/* 
-font-family: 'Abril Fatface', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Playfair Display', serif; */
+#createNewAccount {
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    border: 2px solid gray;
+    font-weight: bold;
+}
 
 
 /* Sarah */
