@@ -35,6 +35,7 @@ $(document).ready(function () {
         )
     })
 
+    // On submit event to check if a user is in the database and log them in
     $('#current-user').on('submit', function (event) {
         // event.preventDefault()
         var currentUserInfo = {
@@ -44,19 +45,14 @@ $(document).ready(function () {
 
             $.ajax('/api/login', {
                 type: 'POST',
-                data: currentUserInfo,
-                success: function (response) {
-                    if (response.statusCode === 200) {
-                        console.log('It worked!')
+                data: currentUserInfo
+            }).then(
+                function () {
+                    console.log('The user exists!')
 
-                        window.location = '/features'
-                    } else {
-                        console.log(response)
-
-                        window.location = '/login'
-                    }
+                    window.location = '/features'
                 }
-            })
+            )
 
     })
 

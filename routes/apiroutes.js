@@ -16,14 +16,24 @@ router.post('/', function (req, res) {
 
 // Checking if a user is in the database
 router.post('/api/login', function (req, res) {
-  console.log(req.body)
-  console.log(req.body.username)
   orm.checkUser(req.body.username, req.body.password, function (error, result) {
     if (error) {
       throw error
-    }
-    console.log(Object.keys(result[0]))
-    console.log(res.json({ id: result.insertId }))
+    } else {
+      if (result.length > 0) {
+        if (result[0].password == req.body.password) {
+          res.send({
+            'code': 200,
+            'success': 'Login successful'
+          })
+        } else {
+          res.send({
+            'code': 204,
+            'success': 'Email and password do not match'
+          })
+        }
+      }
+    } 
   })
 })
 
@@ -40,7 +50,7 @@ router.post('/api/login', function (req, res) {
 // Posting the sandwich name to the database
 router.post('/api/create/sandwich', function(req, res) {
 
-  orm.insertSandwich(req.params.sandwichName, req.params.user_id), function (result) {
+  orm.insertSandwich(req.body.sandwichName, req.params.user_id), function (result) {
     res.json({ id: result.insertId })
   }
   // Using simplyValid to make sure the sandwich name is between a certain length
@@ -73,6 +83,7 @@ router.post('/api/create/toppings', function(req, res) {
   }
 })
 
+// Getting the sandwich data from the database for the features page
 router.get('/api/menu', function(req, res) {
   orm.selectStandard(function (data) {
     var sandwich = {

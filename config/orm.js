@@ -58,7 +58,7 @@ const orm = {
     },
     // Adding a user's sandwich to the database
     insertSandwich: function (userSandwich, userId, cb) {
-        let queryString = 'INSERT INTO sandwich (name, user_id) VALUES (?,?)'
+        let queryString = 'INSERT INTO sandwich (name, user_id) VALUES (?, ?)'
 
         console.log(queryString)
 
@@ -71,7 +71,7 @@ const orm = {
     },
     // Adding a user's sandwich meat to the database
     insertMeat: function (userMeat, sandwichId, cb) {
-        let queryString = 'INSERT INTO meat (meat_type, sandwich_id) VALUES (?,?)'
+        let queryString = 'INSERT INTO meat (meat_type, sandwich_id) VALUES (?, ?)'
 
         console.log(queryString)
 
@@ -84,7 +84,7 @@ const orm = {
     },
     // Adding a user's toppings to the database
     insertToppings: function (userTopping, sandwichId, cb) {
-        let queryString = 'INSERT INTO toppings (topping, sandwich_id) VALUES (?,?)'
+        let queryString = 'INSERT INTO toppings (topping, sandwich_id) VALUES (?, ?)'
 
         console.log(queryString)
 
