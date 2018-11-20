@@ -37,7 +37,7 @@ body {
 
 .top10 {
     font-family: 'Rubik', sans-serif;
-    margin: 30px;
+    /* margin: 30px; */
 }
 
 
@@ -45,91 +45,57 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#burgerIngredients1 {
-    font-family: 'Poppins', sans-serif; 
-}
-
-#burgerIngredients2 {
-    font-family: 'Poppins', sans-serif; 
-}
-
-#burgerIngredients3 {
-    font-family: 'Poppins', sans-serif; 
-}
-
-#burgerIngredientsA {
-    font-family: 'Poppins', sans-serif;
-}
-
-#burgerIngredientsB {
-    font-family: 'Poppins', sans-serif;
-}
-
+#burgerIngredients1,
+#burgerIngredients2,
+#burgerIngredients3,
+#burgerIngredientsA,
+#burgerIngredientsB,
 #burgerIngredientsC {
     font-family: 'Poppins', sans-serif; 
 }
 
-
-
 .burgerCard {
-    width: 60%;;
     text-align: center;
     display: inline-block;
 }
 
-#burgercard1 {
-    margin: 0 auto;
-    background-color: rgba(102, 182, 178, 0.445);
-}
-
-#burgercard2 {
-    margin: 0 auto;
-    background-color: rgba(102, 182, 178, 0.445);
-}
-
+#burgercard1,
+#burgercard2,
 #burgercard3 {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: rgba(102, 182, 178, 0.445);
 }
 
 
 
 .leaderboard {
-    width: 60%;;
     text-align: center;
     display: inline-block
 }
 
-#leaderboardCard1 {
-    margin: 0 auto;
-    background-color: rgba(102, 182, 178, 0.445);
-}
-
-#leaderboardCard2 {
-    margin: 0 auto;
-    background-color: rgba(102, 182, 178, 0.445); 
-}
-
+#leaderboardCard1,
+#leaderboardCard2,
 #leaderboardCard3 {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: rgba(102, 182, 178, 0.445);
 }
 
 .submitButtonDiv {
     text-align: center;
-    font-family: 'Playfair Display', serif;
     margin: 0 auto;
 }
 
-#choose7 {
+/* #choose7 {
     margin: 0 auto;
-}
+} */
 
 #create-new {
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     width: 25%;
     border: 2px solid gray;
     font-weight: bold;
+    padding: 20px 10px;
 }
 
 .lb2 {
@@ -140,48 +106,17 @@ body {
     float: left;
 }
 
-#Choose1 {
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-    border: 2px solid gray;
-    font-weight: bold;
-}
-
-#Choose2 {
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-    border: 2px solid gray;
-    font-weight: bold;
-}
-
-#Choose3 {
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-    border: 2px solid gray;
-    font-weight: bold;
-}
-
-#choose4 {
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-    border: 2px solid gray;
-    font-weight: bold;
-}
-
-#choose5 {
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-    border: 2px solid gray;
-    font-weight: bold;
-}
-
+#Choose1,
+#Choose2,
+#Choose3,
+#choose4,
+#choose5,
 #choose6 {
     font-family: 'Poppins', sans-serif;
     width: 50%;
     border: 2px solid gray;
     font-weight: bold;
 }
-
 
 /* 
 <!-- 
@@ -198,41 +133,23 @@ body {
 }
 
 
-#signUpDiv {
+#signUpDiv,
+#loginDiv {
  width: 35%;
  margin: 0 auto;
 }
 
-#loginDiv {
-    width: 35%;
-    margin: 0 auto;
-   }
-
-
-.usernameDiv {
-    width: 90;
-}
-
+.usernameDiv,
+.passwordDiv,
 .phoneNumberDiv {
     width: 90%;
 }
 
-.passwordDiv {
-    width: 90%;
-}
-
-.usernameText {
-    font-family: 'Poppins', sans-serif;
-}
-
-.phoneNumberText {
-    font-family: 'Poppins', sans-serif;
-}
-
+.usernameText,
+.phoneNumberText,
 .passwordText {
     font-family: 'Poppins', sans-serif;
 }
-
 
 #username {
     font-family: 'Poppins', sans-serif;
