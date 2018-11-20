@@ -54,6 +54,11 @@ $(document).on("click", "#submitSandwich", function (event) {
     var sandwichName = $("#inputSandwichName").val().trim();
     $("#cardSandwichName").text(sandwichName);
 
+    var newSandwichData = {
+        name: sandwichName,
+        user_id: $('#username2').val()
+    }
+
     // // Populating the sandwich made card with the name of the user
     // var user = $(this).data('username')
     // $('#cardUsername').text('Created by: ' + user)
@@ -134,24 +139,24 @@ $(document).on("click", "#submitSandwich", function (event) {
 
     $.ajax('/api/create/sandwich', {
         method: 'POST',
-        data: sandwichName
+        data: newSandwichData
     }).then( function (response) {
         console.log('New sandwich added.')
     })
 
-    $.ajax('/api/create/meat', {
-        method: 'POST',
-        data: meatArray
-    }).then( function (response) {
-        console.log(meatArray)
-    })
+    // $.ajax('/api/create/meat', {
+    //     method: 'POST',
+    //     data: meatArray
+    // }).then( function (response) {
+    //     console.log(meatArray)
+    // })
 
-    $.ajax('/api/create/toppings', {
-        method: 'POST',
-        data: toppingsArray
-    }).then( function (response) {
-        console.log(toppingsArray)
-    })
+    // $.ajax('/api/create/toppings', {
+    //     method: 'POST',
+    //     data: toppingsArray
+    // }).then( function (response) {
+    //     console.log(toppingsArray)
+    // })
 
 })
 

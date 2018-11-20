@@ -24,6 +24,7 @@ $(document).ready(function () {
         )
     })
 
+    // On submit event to check if a user is in the database and log them in
     $('#current-user').on('submit', function (event) {
         // event.preventDefault()
         var currentUserInfo = {
